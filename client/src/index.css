@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    @variants responsive {
+      .contain {
+        max-width: 1024px;
+        margin: auto;
+        padding: 0px;
+      }
+    }
+  }
