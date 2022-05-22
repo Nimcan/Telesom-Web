@@ -1,5 +1,5 @@
 import React from 'react'
-import {Menu, Transition} from '@headlessui/react'
+import {Menu, Transition, Disclosure} from '@headlessui/react'
 import { Fragment } from 'react'
 
 
@@ -8,23 +8,23 @@ function Navbar() {
     <Menu>
       <div className='flex flex-col'>
         {/* top Navbar */}
-        <div className='hidden sm:flex bg-gray-200 justify-center gap-16'>
-          <div className='bg-gray-400 p-5 cursor-pointer'>
-            <p>Personal</p>
+        <div className='hidden sm:flex bg-brand-lightGreen justify-center gap-16'>
+          <div className='bg-brand-green p-5 cursor-pointer'>
+            <p className='text-white'>Personal</p>
           </div>
           <div className='hidden sm:flex flex-row md:flex-wrap'>
-              <a href='#' className='p-5 px-5 hover:bg-gray-400'>Portofolio</a>
-              <a href='#' className='p-5 px-5 hover:bg-gray-400'>Portofolio</a>
-              <a href='#' className='p-5 px-5 hover:bg-gray-400'>Portofolio</a>
-              <a href='#' className='p-5 px-5 hover:bg-gray-400'>Portofolio</a>
+              <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Portofolio</a>
+              <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Career</a>
+              <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Complaints</a>
+              <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Help</a>
           </div>
-          <div className='flex flex-row md:flex-wrap gap-5 p-5'>
-            <div className='flex items-center'>
+          <div className='flex flex-row md:flex-wrap gap-5 '>
+            <div className='flex items-center p-5 hover:bg-brand-green cursor-pointer'>
               <img src='./images/world.svg' className='h-5 mr-1' />
               <p>English</p>
               
             </div>
-            <div className='flex items-center'>
+            <div className='flex items-center p-5 hover:bg-brand-green group-hover:text-white cursor-pointer'>
               <img src='./images/user.svg' className='h-5 mr-1' />
               <p>Login</p>
             </div>
@@ -32,33 +32,29 @@ function Navbar() {
         </div>
 
         {/* bottom Navbar */}
-        <div className='hidden sm:flex items-center justify-center gap-16 bg-gray-400'>
+        <div className='hidden sm:flex items-center justify-center gap-16 bg-brand-green'>
           <div>
             <img src='./images/telesom_logo.png' alt='logo' className=''/>
           </div>
           <div>
             <ul className='flex'>
-              <li className='p-5'><a href='#'>Home</a></li>
-              <li className='p-5'><a href='#'>Buy Now</a></li>
-              <li className='p-5'><a href='#'>Services</a></li>
-              <li className='p-5'><a href='#'>Company</a></li>
-              <li className='p-5'><a href='#'>Contact Us</a></li>
+              <li className='p-5 text-white'><a href='#'>Home</a></li>
+              <li className='p-5 text-white'><a href='#'>Buy Now</a></li>
+              <li className='p-5 text-white'><a href='#'>Services</a></li>
+              <li className='p-5 text-white'><a href='#'>Company</a></li>
+              <li className='p-5 text-white'><a href='#'>Contact Us</a></li>
             </ul>
           </div>
-          <div>
-            <input placeholder='search' className='' />
+          <div className='rounded'>
+            <input placeholder='search' className='rounded p-1' />
           </div>
 
           
         </div>
 
-
-
         {/* responsive desing */}
 
-        
-
-        <div className='flex justify-center sm:hidden bg-gray-400'>
+        <div className='flex justify-center sm:hidden bg-brand-lightGreen'>
           <p className='mx-auto p-1 text-xl border-b-4 border-white hover'>Personal</p>
           <div className='flex mx-auto p-1 items-center'> 
               <img src='./images/user.svg' className='h-5 mr-1' />
@@ -66,12 +62,12 @@ function Navbar() {
           </div>
         </div>
 
-        <div className='sm:hidden flex justify-between items-center bg-gray-200 cursor-pointer'>
-          <img src='./images/telesom_logo.png' alt='logo' className='ml-4'/>
+        <div className='sm:hidden flex justify-between items-center bg-brand-green cursor-pointer'>
+          <img src='./images/telesom_logo.png' alt='logo' className='p-5 ml-4'/>
           <div className='flex sm:hidden items-center'>
-            <img src='./images/search.svg' className='h-8 mr-4' />
-            <Menu.Button>
-            <img src='./images/menu.svg' className='h-8 mr-4' />
+            {/* <img src='./images/search.svg' className='h-8 mr-4' /> */}
+            <Menu.Button className='mr-4 '>
+            <img src='./images/menu.svg' className='text-white'/>
             </Menu.Button>
         </div>
         </div>
@@ -86,23 +82,34 @@ function Navbar() {
           leaveTo="transform opacity-0 scale-95"
         >
 
-
         <div className='block sm:hidden '>
           <Menu.Items>
-            <div className='flex flex-col bg-gray-400 '>
-              <a href='#' className='p-3 hover:bg-white'>Home</a>
-              <a href='#' className='p-3 hover:bg-white'>Home</a>
-              <a href='#' className='p-3 hover:bg-white'>Home</a>
-              <a href='#' className='p-3 hover:bg-white'>Home</a>
-              <a href='#' className='p-3 hover:bg-white'>Home</a>
+            <div className='flex flex-col bg-brand-lightGreen '>
+              <a href='#' className='p-3 text-xl hover:bg-white'>Home</a>
+              <Disclosure>
+                <Disclosure.Button className='p-3 text-xl hover:bg-white justify-left text-left'>
+                    <a href='#'>Buy Now</a>
+                </Disclosure.Button>
+              <Disclosure.Panel className='flex flex-col bg-brand-green'>
+                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy ADSL service</a>
+                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy MYSMS service</a>
+                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
+                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Landline Installation</a>
+                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>New Simcard</a>
+              </Disclosure.Panel>
+
+              </Disclosure>
+              <a href='#' className='p-3 text-xl hover:bg-white'>Services</a>
+              <a href='#' className='p-3 text-xl hover:bg-white'>Company</a>
+              <a href='#' className='p-3 text-xl hover:bg-white'>Contact Us</a>
             </div>
 
-            <div className='flex flex-col bg-gray-500'>
-              <a href='#' className='p-2 hover:bg-white'>Home</a>
-              <a href='#' className='p-2 hover:bg-white'>Home</a>
-              <a href='#' className='p-2 hover:bg-white'>Home</a>
-              <a href='#' className='p-2 hover:bg-white'>Home</a>
-              <a href='#' className='p-2 hover:bg-white'>Home</a>
+            <div className='flex flex-col bg-brand-green text-white'>
+              <a href='#' className='p-2 hover:bg-white'>About</a>
+              <a href='#' className='p-2 hover:bg-white'>Portofolio</a>
+              <a href='#' className='p-2 hover:bg-white'>Career</a>
+              <a href='#' className='p-2 hover:bg-white'>Complaints</a>
+              <a href='#' className='p-2 hover:bg-white'>Help</a>
             </div>
             </Menu.Items>
         </div>
