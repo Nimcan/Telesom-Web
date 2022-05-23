@@ -1,16 +1,30 @@
 import React from 'react'
-import {Menu, Transition, Disclosure} from '@headlessui/react'
+import {Menu, Transition, Disclosure, Listbox} from '@headlessui/react'
 import { Fragment } from 'react'
 
 
+const dropDown = ()=>{
+  return(
+    <div className='flex flex-col bg-brand-green'>
+    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy ADSL service</a>
+    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy MYSMS service</a>
+    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
+    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Landline Installation</a>
+    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>New Simcard</a>
+  </div>
+  )
+}
+
 function Navbar() {
   return (
-    <Menu>
+    // <Menu>
       <div className='flex flex-col'>
         {/* top Navbar */}
         <div className='hidden sm:flex bg-brand-lightGreen justify-center gap-16'>
           <div className='bg-brand-green p-5 cursor-pointer'>
-            <p className='text-white'>Personal</p>
+              <p className='text-white flex items-center'>Personal
+              <i className="fa-solid fa-caret-down ml-2"></i>
+              </p>
           </div>
           <div className='hidden sm:flex flex-row md:flex-wrap'>
               <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Portofolio</a>
@@ -19,8 +33,8 @@ function Navbar() {
               <a href='#' className='p-5 px-5 hover:bg-brand-green hover:text-white'>Help</a>
           </div>
           <div className='flex flex-row md:flex-wrap gap-5 '>
-            <div className='flex items-center p-5 hover:bg-brand-green cursor-pointer'>
-              <img src='./images/world.svg' className='h-5 mr-1' />
+            <div className='flex items-center p-5 hover:bg-brand-green hover:text-white cursor-pointer'>
+              <i className="fa-solid fa-globe mr-1"></i>
               <p>English</p>
               
             </div>
@@ -37,13 +51,42 @@ function Navbar() {
             <img src='./images/telesom_logo.png' alt='logo' className=''/>
           </div>
           <div>
-            <ul className='flex'>
-              <li className='p-5 text-white'><a href='#'>Home</a></li>
-              <li className='p-5 text-white'><a href='#'>Buy Now</a></li>
-              <li className='p-5 text-white'><a href='#'>Services</a></li>
-              <li className='p-5 text-white'><a href='#'>Company</a></li>
-              <li className='p-5 text-white'><a href='#'>Contact Us</a></li>
-            </ul>
+            <div className='flex'>
+              <a href='#' className='p-5 text-white'>Home</a>
+              <Menu>
+                
+                  <Menu.Button>
+                  <a href='#' className='p-5 text-white'>Buy Now <i className="fa-solid fa-caret-down ml-2"></i></a>
+                  </Menu.Button>
+                
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className='flex flex-col bg-brand-green'>
+                      <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy ADSL service</a>
+                      <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy MYSMS service</a>
+                      <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
+                      <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Landline Installation</a>
+                      <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>New Simcard</a>
+                  </Menu.Items>
+
+
+                  </Transition>
+
+                
+              
+              
+              </Menu>
+              <a href='#' className='p-5 text-white'>Services</a>
+              <a href='#' className='p-5 text-white'>Company</a>
+              <a href='#' className='p-5 text-white'>Contact Us</a>
+            </div>
           </div>
           <div className='rounded'>
             <input placeholder='search' className='rounded p-1' />
@@ -61,7 +104,7 @@ function Navbar() {
               <p className='text-xl'>Login</p>
           </div>
         </div>
-
+        <Menu>
         <div className='sm:hidden flex justify-between items-center bg-brand-green cursor-pointer'>
           <img src='./images/telesom_logo.png' alt='logo' className='p-5 ml-4'/>
           <div className='flex sm:hidden items-center'>
@@ -88,15 +131,17 @@ function Navbar() {
               <a href='#' className='p-3 text-xl hover:bg-white'>Home</a>
               <Disclosure>
                 <Disclosure.Button className='p-3 text-xl hover:bg-white justify-left text-left'>
-                    <a href='#'>Buy Now</a>
+                    <a href='#'>Buy Now<i className="fa-solid fa-caret-down ml-2"></i></a>
                 </Disclosure.Button>
-              <Disclosure.Panel className='flex flex-col bg-brand-green'>
-                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy ADSL service</a>
-                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy MYSMS service</a>
-                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
-                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Landline Installation</a>
-                <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>New Simcard</a>
-              </Disclosure.Panel>
+
+                <Disclosure.Panel className='flex flex-col bg-brand-green'>
+                    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy ADSL service</a>
+                    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy MYSMS service</a>
+                    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
+                    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>Landline Installation</a>
+                    <a href='#' className='p-3 pl-8 text-white text-lg hover:bg-brand-lighGreen'>New Simcard</a>
+                </Disclosure.Panel>
+          
 
               </Disclosure>
               <a href='#' className='p-3 text-xl hover:bg-white'>Services</a>
@@ -115,9 +160,10 @@ function Navbar() {
         </div>
 
         </Transition>
+        </Menu>
 
       </div>
-    </Menu>
+    // </Menu>
   )
 }
 
