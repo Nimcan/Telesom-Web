@@ -21,11 +21,31 @@ function Navbar() {
       <div className='flex flex-col'>
         {/* top Navbar */}
         <div className='hidden sm:flex bg-brand-lightGreen justify-center items-center xl:gap-8 gap-8'>
-          <div className='bg-brand-green  xl:p-5 p-3 cursor-pointer'>
-              <p className='text-white flex items-center '>Personal
+          <Menu as='div' className='inline-block'> 
+
+          <div className='bg-brand-green cursor-pointer '>
+            <Menu.Button>
+              <p className='text-white flex xl:p-5 items-center '>Personal
               <i className="fa-solid fa-caret-down ml-2"></i>
               </p>
+            </Menu.Button>
+
+              <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    
+                <Menu.Item className='absolute flex flex-col'>
+                  <input placeholder='Search Here....' className='p-2' />
+                </Menu.Item>
+              </Transition>
           </div>
+        </Menu>
           <div className='hidden sm:flex flex-row md:flex-wrap'>
               <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Portofolio</a>
               <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Career</a>
