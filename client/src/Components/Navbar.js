@@ -15,6 +15,7 @@ const dropDown = ()=>{
   )
 }
 
+
 function Navbar() {
   return (
     // <Menu>
@@ -40,8 +41,9 @@ function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     
-                <Menu.Item className='absolute flex flex-col'>
-                  <input placeholder='Search Here....' className='p-2' />
+                <Menu.Item className='absolute flex flex-col bg-brand-lightGreen p-5'>
+                  {/* <input placeholder='Search Here....' className='p-2' /> */}
+                  <p className='bg-brand-lightGreen py-5 px-10'>Business</p>
                 </Menu.Item>
               </Transition>
           </div>
@@ -73,7 +75,8 @@ function Navbar() {
           <div>
             <div className='flex items-center'>
               <a href='#' className='xl:p-5 p-2 text-white'>Home</a>
-              <Menu as="div" className='inline-block'>
+              
+              <Menu as="div" className='relative inline-block'>
                 
                   <Menu.Button className='inline-flex '>
                   <a href='#' className='xl:p-5 p-2 text-white'>Buy Now <i className="fa-solid fa-caret-down ml-1"></i></a>
@@ -88,7 +91,7 @@ function Navbar() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className='flex flex-col origin-top-left absolute mt-1 bg-brand-lightGreen rounded-md divide-y divide-gray-300'>
+                    <Menu.Items className='flex flex-col origin-top-left left-0 absolute w-60 mt-1 bg-brand-lightGreen rounded-md z-10'>
                       <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy ADSL service</a>
                       <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy MYSMS service</a>
                       <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy Vehicle Tracking service</a>
@@ -126,9 +129,8 @@ function Navbar() {
         <div className='sm:hidden flex justify-between items-center bg-brand-green cursor-pointer'>
           <img src='./images/telesom_logo.png' alt='logo' className='pr-5 ml-4'/>
           <div className='flex sm:hidden items-center'>
-            {/* <img src='./images/search.svg' className='h-8 mr-4' /> */}
             <Menu.Button className='mr-4 '>
-            <img src='./images/menu.svg' className='text-white'/>
+            <i className="fa-solid fa-bars text-white text-xl"></i>
             </Menu.Button>
         </div>
         </div>
