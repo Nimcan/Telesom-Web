@@ -74,12 +74,12 @@ function Navbar() {
           </div>
           <div>
             <div className='flex items-center'>
-              <a href='#' className='xl:p-5 p-2 text-white'>Home</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Home</a>
               
               <Menu as="div" className='relative inline-block'>
                 
                   <Menu.Button className='inline-flex '>
-                  <a href='#' className='xl:p-5 p-2 text-white'>Buy Now <i className="fa-solid fa-caret-down ml-1"></i></a>
+                  <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Buy Now <i className="fa-solid fa-caret-down ml-1"></i></a>
                   </Menu.Button>
                 
                   <Transition
@@ -100,15 +100,15 @@ function Navbar() {
                   </Menu.Items>
                 </Transition>
               </Menu>
-              <a href='#' className='xl:p-5 p-2 text-white'>Services</a>
-              <a href='#' className='xl:p-5 p-2 text-white'>Company</a>
-              <a href='#' className='xl:p-5 p-2 text-white'>Contact Us</a>
-              <a href='#' className='xl:p-5 p-2 text-white'>About Us</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Services</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Company</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Contact Us</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>About Us</a>
             </div>
           </div>
-          <div className='rounded'>
+          <div className='rounded '>
             {/* <input placeholder='search' className='rounded p-1' /> */}
-            <i className="fa-solid fa-magnifying-glass text-xl text-white cursor-pointer"></i>
+            <i className="fa-solid fa-magnifying-glass text-xl text-white cursor-pointer hover:text-black "></i>
           </div>
 
           
