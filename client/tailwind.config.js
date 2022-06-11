@@ -8,8 +8,12 @@ module.exports = {
             lightGreen:"#97D700",
             yellow:"#ffff00"
         }
+      },
+      background:{
+      bgImage: "src('./images/bg.jpg')"
       }
     },
+    
   },
   plugins: [],
 }

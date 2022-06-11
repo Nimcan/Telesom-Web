@@ -26,7 +26,7 @@ function Navbar() {
 
           <div className='bg-brand-green cursor-pointer '>
             <Menu.Button>
-              <p className='text-white flex xl:p-5 items-center '>Personal
+              <p className='text-white flex p-5 items-center '>Personal
               <i className="fa-solid fa-caret-down ml-2"></i>
               </p>
             </Menu.Button>
