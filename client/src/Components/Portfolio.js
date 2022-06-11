@@ -5,7 +5,7 @@ function Portfolio() {
       <div className='bg-bgImage'>
           {/* <img src='./images/bg.jpg' /> */}
     <div className='contain '>
-        <h1 className='text-center'>Telesom Group Portofolio</h1>
+        <h1 className='text-center text-3xl mb-8'>Telesom Group Portofolio</h1>
 
         <div className='grid md:grid-cols-3 px-4 '>
             <div className='flex flex-col justify-between border border-gray-300'>

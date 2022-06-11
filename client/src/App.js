@@ -1,4 +1,5 @@
 import './App.css';
+import About from './Components/about';
 import Career from './Components/career';
 import Crs from './Components/crs';
 import Navbar from './Components/Navbar';
@@ -13,6 +14,7 @@ function App() {
       <Crs />
       <Portfolio />
       <Career />
+      <About />
     </>
   );
 }
