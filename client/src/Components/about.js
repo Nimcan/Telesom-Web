@@ -5,34 +5,33 @@ function About() {
     <div>
         <div className=''>
             <h1 className='text-3xl text-center'>About Us</h1>
-            <div className='contain '>
-                <div className='grid md:grid-cols-2 items-center border border-gray-200 px-4'>
+            <div className='xl:contain px-2'>
+                <div className='grid md:grid-cols-2 items-center border border-gray-300'>
                     <div>
                         <img src='./images/about.jpg' alt='' />
                     </div>
                     <div>
-                        <h1 className='text-center'>Shirkadda Telesom</h1>
-                        <p className='px-3'>Shirkadda Telesom waxa la aasaasay sannadkii 2002 waxaana iska kaashaday saamilay badan oo dalka u dhashay.
-                            Shirkaddu waxay xarumo ka furatay dalka oo dhan, iyada oo bilowday adeegyo casri ah oo aan markaa dalka
-                            laga aqoon sida adeega mobile-ka gacanta ee GSM-ka iyo Landline.
-                            Telesom muddadii ay jirtay waxay ku guulaysatay in ay noqoto shirkaddii ugu horaysay ee dalka ka
-                            hirgelisa adeegyo casri ah oo ay ku soo kordhisay adeegyadda Mobile-ka iyo Landline-ka, sida ZAAD (mobile money payment),
-                            adeega Mobile Internet-ka (3G/GPRS), Dhambaal, Ila- hadal, Ila-maqal, Mushaax, Aqoonmaal iyo adeegyo kale oo tiro badan.
-                            Telesom waxay hormood ka noqotay isgaadhsiinta dalka iyadoo adeegsanaysa tiknoolajiyad casri ah iyo shaqaale u jajaban raali galinta macaamiisha,
-                            waxaanay si mug leh uga qayb qaadatay kobaca iyo horumarka dhaqaalaha dalka, iyadoo ka qayb qaadatay shaqo abuurista dalka. 
-                            Shirkadda Telesom waxay adeegyada gaadhsiisay dalka oo dhan mii iyo magaalaba waxaanay noqotay shirkadda ugu balaadhan xaga isgaadhsiinta dalka.
-                            Shirkadda Telesom waxay xidhiidh isgaadhsiineed la leedahay shirkadaha ugu waawayn xaga isgaadhsiinta ee wadama jaarka ah waxa kale oo ay la wadaagtaa adeega mushaax.</p>
+                        <h1 className='text-center text-2xl font-bold '>Telesom Company</h1>
+                        <p className='px-3'>Telesom is a private telecommunication company which was established in the year 2002 by local entrepreneurs in Hargeisa Somaliland
+                                            to become the leader and pioneer in telecommunication sector while utilizing the latest technology and employing a highly trained and professional customer care
+                                             team that satisfy our customers with world class services.
+                                            Telesom Company offers an integrated suite of communication products and services to the customers including, Mobile voice and data, ZAAD (mobile money payment)
+                                             Mobile Internet (4G/GPRS), Dhambaal service, Ila hadal, Ila maqal, Mushaax, Aqoonmaal and many more. Telesom has played a major role in the economic development 
+                                             of the country plus the creation of significant huge employment opportunities. The company has the widest network coverage in Somaliland, delivering its quality
+                                              unmatched services across the country.
+                                            The company operates in entire Somaliland, where it has the widest coverage network. Telesom has affiliation with neighboring country’s biggest Telecommunication
+                                             companies and also share regional and international Roaming service with them.</p>
                     </div>
                 </div>
             </div>
             {/* adeegyada aasaasiga */}
-            <div className='bg-brand-green py-5'>
+            <div className='bg-brand-green py-5 mt-10'>
                 <div className='contain'>
                 <div className='p-5'>
-                <h1 className='text-2xl text-center'>Adeegyada Aasaasiga ah</h1>
-                <p className='text-center'>Adeegyada aasaasiga ahi waa adeegyada ugu ballaadhan ee ay shirkaddu u diyaarisay ama u fidiso bulshada
-                     kala duwan ee ay u adeegto, waana adeegyada 
-                    isgaadhsiineed ee ugu casrisan dunida. Adeegyadani waxay ka kooban yihiin Afar qaybood oo kala ah.</p>
+                <h1 className='text-2xl text-center'>Core Services</h1>
+                <p className='text-center'>The basic services that the company provides are the biggest
+                 services the company has preparedfor the diverse community it serves, and it’s the best
+                  communication services in the modern world. These services consist of four categories:-</p>
                 </div>
 
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center '>
@@ -55,7 +54,59 @@ function About() {
 
                 </div>
               </div>
+
+              
+
+
             </div>
+
+            {/* Himilo Hiigsi iyo Hab dhaqanka */}
+            <div className='mt-10'>
+                    <div className='xl:contain flex'>
+                        <h1 className='text-2xl font-bold p-4 xl:p-10'>Our Mission</h1>
+                        <p className='p-4 xl:p-10'>To enrich the lives of our community by providing highest quality
+                         and affordable digital services through innovative technology and dedicated workforce.</p>
+                    </div>
+                    <div className='bg-gray-200'>
+                        <div className='contain flex'>
+                        <h1 className='text-2xl font-bold p-4 xl:p-10'>Our Vision</h1>
+                        <p className='py-4 px-8 xl:py-10 xl:px-5 md:px-2'>To be the leader in providing innovative ICT solutions.</p>
+                        </div>
+                    </div>
+                    {/* <div className='flex contain'>
+                        <h1 className='text-2xl font-bold p-10'>Our Core Values</h1>
+                        <div className='py-10'>
+                        <ul>
+                            <li><span className='font-bold'>INTEGRITY –</span> To have the best moral principles such as, to be honest, truthful, respectful, caring and loyal.</li>
+                        </ul>
+                        </div>
+                    </div> */}
+                </div>
+
+                <div className='xl:contain px-2'>
+                    <div className='grid md:grid-cols-2 mt-5 border-2 border-brand-green '>
+                    <div className='flex flex-col bg-gray-200 p-4 xl:p-10 gap-4'>
+                        <h1 className='text-2xl font-bold text-center'>Our Core Values</h1>
+                        <ul className='m-auto '>
+                        <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>INTEGRITY –</span> To have the best moral principles such as, to be honest, truthful, respectful, caring and loyal.</li>
+                        <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>PROFESSIONALISM –</span> To have agile, competent, empowered and skilled staff.</li>
+                        <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>TEAMWORK –</span> To work as one collaborative team.</li>
+                        <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>INNOVATIVE –</span> To create a culture that encourages innovation.</li>
+                        <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>CUSTOMER-CENTRIC –</span> To exceed customer expectations in terms of caring.</li>
+                        </ul>
+
+                    </div>
+                    <div className='flex flex-col p-10 xl:p-10 md:p-4 gap-4'>
+                        <h1 className='text-2xl font-bold text-center'>Strategic Themes</h1>
+                        <ul className=' p-5 xl:p-0 md:p-0'>
+                            <li><i class="fa-solid fa-arrow-right mr-2"></i>Operational Excellence</li>
+                            <li><i class="fa-solid fa-arrow-right mr-2"></i>Customer Experience</li>
+                            <li><i class="fa-solid fa-arrow-right mr-2"></i>Business Growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
         </div>
     </div>
   )

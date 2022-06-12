@@ -5,16 +5,18 @@ import Crs from './Components/crs';
 import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Services from './Components/services';
+import Support from './Components/support';
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Services /> */}
-      <Crs />
-      <Portfolio />
-      <Career />
       <About />
+      <Services />
+      {/* <Crs /> */}
+      {/* <Portfolio /> */}
+      <Support />
+      <Career />
     </>
   );
 }
