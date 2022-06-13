@@ -25,7 +25,7 @@ function About() {
                 </div>
             </div>
             {/* adeegyada aasaasiga */}
-            <div className='bg-brand-green py-5 mt-10'>
+            <div className='bg-brand-green py-10 mt-10'>
                 <div className='contain'>
                 <div className='p-5'>
                 <h1 className='text-2xl text-center'>Core Services</h1>
