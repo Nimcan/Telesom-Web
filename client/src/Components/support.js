@@ -23,11 +23,11 @@ function Support() {
                             <h1 className='font-bold'>1. Customer Information</h1>
                             <div className='flex flex-col mt-4'>
                                 <label>Full Name</label>
-                                <input type='' className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"/>
+                                <input type='' className="h-10 border my-2 rounded px-4 w-full bg-gray-50"/>
                                 <label>Telephone</label>
-                                <input type='' className='h-10 border mt-1 rounded px-4 w-full bg-gray-50' />
+                                <input type='' className='h-10 border my-2 rounded px-4 w-full bg-gray-50' />
                                 <label>Location</label>
-                                <input type='' className='h-10 border mt-1 rounded px-4 w-full bg-gray-50' />
+                                <input type='' className='h-10 border my-2 rounded px-4 w-full bg-gray-50' />
                             </div>
 
                             <div>

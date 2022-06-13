@@ -2,10 +2,10 @@ import React from 'react'
 
 function Career() {
   return (
-    <div className='bg-white'>
+    <div className='bg-gray-200'>
         <h1 className='text-3xl text-center mb-8 font-bold underline'>Careers</h1>
-        <div className='contain bg-gray-200'>
-            <div className='grid md:grid-cols-2 border border-gray-400'>
+        <div className='contain bg-white rounded '>
+            <div className='grid md:grid-cols-2 shadow-lg'>
                 <div>
                     <img src='./images/job.jpg' alt='' className=''/>
                 </div>
@@ -27,6 +27,10 @@ function Career() {
                     </table>
                 </div>
 
+            </div>
+
+            <div>
+                <div></div>
             </div>
         </div>
     </div>

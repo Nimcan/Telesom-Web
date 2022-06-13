@@ -6,9 +6,9 @@ function About() {
         <div className=''>
             <h1 className='text-3xl text-center'>About Us</h1>
             <div className='xl:contain px-2'>
-                <div className='grid md:grid-cols-2 items-center border border-gray-300'>
+                <div className='flex flex-col items-center border border-gray-300'>
                     <div>
-                        <img src='./images/about.jpg' alt='' />
+                        <img src='./images/about.jpg' alt='' className='w-96'/>
                     </div>
                     <div>
                         <h1 className='text-center text-2xl font-bold '>Telesom Company</h1>
@@ -25,7 +25,7 @@ function About() {
                 </div>
             </div>
             {/* adeegyada aasaasiga */}
-            <div className='bg-brand-green py-10 mt-10'>
+            <div className='bg-brand-lighterGreen py-10 mt-10'>
                 <div className='contain'>
                 <div className='p-5'>
                 <h1 className='text-2xl text-center'>Core Services</h1>
@@ -61,7 +61,7 @@ function About() {
             </div>
 
             {/* Himilo Hiigsi iyo Hab dhaqanka */}
-            <div className='mt-10'>
+            <div>
                     <div className='xl:contain flex'>
                         <h1 className='text-2xl font-bold p-4 xl:p-10'>Our Mission</h1>
                         <p className='p-4 xl:p-10'>To enrich the lives of our community by providing highest quality
@@ -84,8 +84,8 @@ function About() {
                 </div>
 
                 <div className='xl:contain px-2'>
-                    <div className='grid md:grid-cols-2 mt-5 border-2 border-brand-green '>
-                    <div className='flex flex-col bg-gray-200 p-4 xl:p-10 gap-4'>
+                    <div className='grid md:grid-cols-2 mt-5 '>
+                    <div className='flex flex-col bg-brand-lighterGreen  p-4 xl:p-10 gap-4'>
                         <h1 className='text-2xl font-bold text-center'>Our Core Values</h1>
                         <ul className='m-auto '>
                         <li><span className='font-bold'><i class="fa-solid fa-arrow-right mr-2"></i>INTEGRITY –</span> To have the best moral principles such as, to be honest, truthful, respectful, caring and loyal.</li>
@@ -96,7 +96,7 @@ function About() {
                         </ul>
 
                     </div>
-                    <div className='flex flex-col p-10 xl:p-10 md:p-4 gap-4'>
+                    <div className='flex flex-col bg-brand-lightBlue p-10 xl:p-10 md:p-4 gap-4'>
                         <h1 className='text-2xl font-bold text-center'>Strategic Themes</h1>
                         <ul className=' p-5 xl:p-0 md:p-0'>
                             <li><i class="fa-solid fa-arrow-right mr-2"></i>Operational Excellence</li>
