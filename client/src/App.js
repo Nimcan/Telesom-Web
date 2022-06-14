@@ -1,6 +1,7 @@
 import './App.css';
 import About from './Components/about';
 import Career from './Components/career';
+import Contact from './Components/contact';
 import Crs from './Components/crs';
 import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
@@ -11,11 +12,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <About />
-      <Services />
+      {/* <About /> */}
+      {/* <Services /> */}
       {/* <Crs /> */}
       {/* <Portfolio /> */}
-      <Support />
+      {/* <Support /> */}
+      <Contact />
       <Career />
     </>
   );
