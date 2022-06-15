@@ -2,7 +2,11 @@ import React from 'react'
 
 function Crs() {
   return (
-    <div>Crs</div>
+    <div>
+      <div>
+        <div className=''></div>
+      </div>
+    </div>
   )
 }
 

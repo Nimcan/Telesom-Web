@@ -40,7 +40,7 @@ function Contact() {
                 <p>shareholder Office:- +252-2-522382/522132</p>
               </div>
               <div className='text-center'>
-                <i class="fa-solid fa-envelope-open-text text-xl text-center"></i>
+                <i class="fa-solid fa-envelope-open-text text-2xl text-center"></i>
                 <p>info@telesom.com</p>
                 <p>pr@telesom.com</p>
                 <p>support@telesom.com</p>
