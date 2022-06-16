@@ -1,6 +1,7 @@
 import './App.css';
 import About from './Components/about';
 import ADSL from './Components/buyNow/adslService';
+import Mysms from './Components/buyNow/mysmsService';
 import Career from './Components/career';
 import Contact from './Components/contact';
 import Crs from './Components/crs';
@@ -21,6 +22,7 @@ function App() {
       {/* <Support /> */}
       {/* <Contact /> */}
       <ADSL />
+      <Mysms />
       <Footer />
       {/* <Career /> */}
       

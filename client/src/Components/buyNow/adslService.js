@@ -5,6 +5,8 @@ function ADSL() {
     const sites = ['Arabsiyo', 'Berbera', 'Boorama', 'Burco', 'Buuhoodle', 'Caynabo',
                    'Ceel-afwayn', 'Ceerigaabo', 'Dila', 'Gabiley', 'Garadag', 'Hargaisa',
                    'Harirad', 'Lawyacado', 'Lughaya', 'Oodwayne', 'Wajaale', 'Widhwidh', 'Xudun']
+
+    const services = ['Government institution', 'INGO/UN', 'Business', 'Educational institution', 'Home/Personal user']
   return (
     <div className='bg-gray-200 pb-10'>
         <div>
@@ -73,10 +75,10 @@ function ADSL() {
                             </div>
                         </div>
 
-                        <div className=''>
-                            <h1 className='font-bold mt-4'>2. Customer Category</h1>
-                            <div>
-                                <select className='w-44 h-10 border mt-1 rounded px-4 w-fit bg-gray-100'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 mt-5 gap-4'>
+                            <div className='w-full'>
+                                <h1 className='font-bold'>2. Customer Category</h1>
+                                <select className='w-44 h-10 mt-2 border rounded px-4 w-fit bg-gray-100'>
                                     <option></option>
                                     <option>Government institution</option>
                                     <option>INGO/UN</option>
@@ -86,16 +88,40 @@ function ADSL() {
                                 </select>
                             </div>
 
-                            <div>
-                                <table>
+                            <div className=''>
+                                <div>
+                                    <div className='text-center'>
+                                        <h1 className='underline font-bold'>Installation Prices</h1>
+                                    </div>
+                                    <div>
+                                        <div className='flex justify-between'>
+                                            <label className='border-left'><i class="fa-solid fa-circle-dot mr-2"></i>Internet Wireless Installation</label>
+                                            <label>$10</label>
+                                        </div>
+                                        <div className='flex justify-between'>
+                                            <label className='border-left'><i class="fa-solid fa-circle-dot mr-2"></i>ADSL Router Device</label>
+                                            <label>$30</label>
+                                        </div>
+                                        <div className='flex justify-between'>
+                                            <label className='border-left'><i class="fa-solid fa-circle-dot mr-2"></i>Fixed Line Installation</label>
+                                            <label>$10</label>
+                                        </div>
+                                        <div className='flex justify-between'>
+                                            <label className='flex-1 text-center font-bold'>Total</label>
+                                            <label className='font-bold'>$50</label>
+                                        </div> 
+                                    </div>
+                                </div>
+                                {/* <table className=''>
                                     <tr>
-                                        <th>Installation Prices</th>
+                                        <th colSpan='2'>Installation Prices</th>
                                     </tr>
                                     <tr>
                                         <td>Internet Wireless Installation</td>
                                         <td>$10</td>
                                     </tr>
-                                </table>
+                                </table> */}
+                            
                             </div>
                         </div>
 
@@ -117,23 +143,11 @@ function ADSL() {
                             </table>
                         </div>
 
-                        {/* <div>
-                            <h1 className='font-bold mt-4'>4. Description Of the Issue</h1>
-                            <div className=''>
-                                <textarea className='h-36 border mt-1 rounded px-4 w-full bg-gray-50'></textarea>
-                            </div>
-                        </div> */}
-
                         <div className='flex justify-end mt-4'>
                             <button className='py-2 px-8 border text-white rounded bg-brand-green text-right'>Submit</button>
                         </div>
-
-
                         </div>
-                        
-
                     </div>
-                    
                 </div>
             </div>
         </div>
