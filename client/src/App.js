@@ -1,6 +1,8 @@
 import './App.css';
 import About from './Components/about';
 import ADSL from './Components/buyNow/adslService';
+import Ilasoco from './Components/buyNow/ilasocoService';
+import Landline from './Components/buyNow/landline';
 import Mysms from './Components/buyNow/mysmsService';
 import Career from './Components/career';
 import Contact from './Components/contact';
@@ -16,13 +18,15 @@ function App() {
     <>
       <Navbar />
       {/* <About /> */}
-      <Services />
+      {/* <Services /> */}
       {/* <Crs /> */}
       {/* <Portfolio /> */}
       {/* <Support /> */}
       {/* <Contact /> */}
-      <ADSL />
-      <Mysms />
+      {/* <ADSL /> */}
+      {/* <Mysms /> */}
+      {/* <Ilasoco /> */}
+      <Landline />
       <Footer />
       {/* <Career /> */}
       
