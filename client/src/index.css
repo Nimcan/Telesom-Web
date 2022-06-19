@@ -10,6 +10,28 @@
         margin: auto;
         padding: 0px;
       }
+      /* .fa-chevron-left, .fa-angle-right{
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        transform: translate(0, -50%);
+        font-size: 40px;
+        padding: 10px;
+        cursor: pointer;
+        color: #030305;
+        transition: 0.1s;
+        user-select: none;
+        
+      }
+      
+      .fa-chevron-left:hover, .fa-angle-right:hover{
+        color: white;
+        
+      } */
+      
+      /* .fa-angle-right{
+        right: 0;
+      } */
       table {
         border-collapse: collapse;
       }

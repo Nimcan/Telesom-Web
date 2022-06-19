@@ -52,10 +52,10 @@ function Navbar() {
         </Menu>
           <div className='hidden sm:flex flex-row md:flex-wrap'>
             
-              <a href='./Portfolio.js' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to = '/portfolio' >Portofolio</Link></a>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to="/career">Career</Link></a>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to = "/support">Complaints</Link></a>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Help</a>
+              <Link to = '/portfolio' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><a href='#' >Portofolio</a></Link>
+              <Link to="/career" className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><a href='#' >Career</a></Link>
+              <Link to = "/support" className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><a href='#' >Complaints</a></Link>
+              {/* <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Help</a> */}
           </div>
           <div className='flex flex-row md:flex-wrap gap-2 '>
             <div className='flex items-center xl:p-5 p-3 hover:bg-brand-green hover:text-white cursor-pointer'>
@@ -127,11 +127,11 @@ function Navbar() {
               </Menu>
               <Link to = "/service"  className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><a href='#'>Services</a></Link>
               <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Company</a>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><Link to = "/contact" >Contact Us</Link></a>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><Link to = "/about" >About Us</Link></a>
+              <Link to = "/contact" className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black' ><a href='#' >Contact Us</a></Link>
+              <Link to = "/about" className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><a href='#' >About Us</a></Link>
             </div>
           </div>
-          <div className='rounded '>
+          <div className='rounded'>
             {/* <input placeholder='search' className='rounded p-1' /> */}
             <i className="fa-solid fa-magnifying-glass text-xl text-white cursor-pointer hover:text-black "></i>
           </div>
@@ -180,16 +180,16 @@ function Navbar() {
                 </Disclosure.Button>
 
                 <Disclosure.Panel className='flex flex-col bg-brand-green'>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><Link to = "/adsl" >Buy ADSL service</Link></a>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Buy MYSMS service</a>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Landline Installation</a>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>New Simcard</a>
+                    <Link to = "/adsl" className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><a href='#' >Buy ADSL service</a></Link>
+                    <Link to = "/mysms" className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><a href='#'>Buy MYSMS service</a></Link>
+                    <Link to = "/ilasoco" className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><a href='#'>Buy Vehicle Tracking service</a></Link>
+                    <Link to = "/landline" className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><a href='#'>Landline Installation</a></Link>
+                    <Link to = "/simcard" className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><a href='#'>New Simcard</a></Link>
                 </Disclosure.Panel>
           
 
               </Disclosure>
-              <a href='#' className='p-3 text-lg hover:bg-white'>Services</a>
+              <Link to = "/service" className='p-3 text-lg hover:bg-white'><a href='#'>Services</a></Link>
               <a href='#' className='p-3 text-lg hover:bg-white'>Company</a>
               <a href='#' className='p-3 text-lg hover:bg-white'>Contact Us</a>
             </div>

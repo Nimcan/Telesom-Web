@@ -5,14 +5,14 @@ function About() {
     <div>
         <div className=''>
             <h1 className='text-3xl text-center'>About Us</h1>
-            <div className='xl:contain px-2'>
+            <div className='xl:contain px-2 shadow-xl'>
                 <div className='flex flex-col items-center border border-gray-300'>
                     <div>
                         <img src='./images/about.jpg' alt='' className='w-96'/>
                     </div>
                     <div>
                         <h1 className='text-center text-2xl font-bold '>Telesom Company</h1>
-                        <p className='px-3'>Telesom is a private telecommunication company which was established in the year 2002 by local entrepreneurs in Hargeisa Somaliland
+                        <p className='px-3 py-3'>Telesom is a private telecommunication company which was established in the year 2002 by local entrepreneurs in Hargeisa Somaliland
                                             to become the leader and pioneer in telecommunication sector while utilizing the latest technology and employing a highly trained and professional customer care
                                              team that satisfy our customers with world class services.
                                             Telesom Company offers an integrated suite of communication products and services to the customers including, Mobile voice and data, ZAAD (mobile money payment)

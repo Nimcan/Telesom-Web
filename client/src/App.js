@@ -15,12 +15,16 @@ import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Services from './Components/services';
 import Support from './Components/support';
+import News from './Components/news';
 
 function App() {
   return (
 
     <>
       <Navbar />
+      {/* <Crs /> */}
+      <News />
+      {/* <Services /> */}
         <Routes>
           <Route path='/about' element={<About />} />
           <Route path='/service' element={<Services />} />

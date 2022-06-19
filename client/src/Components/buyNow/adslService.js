@@ -20,7 +20,7 @@ function ADSL() {
                 </div>
 
                 <div className='xl:contain shadow-lg rounded bg-white '>
-                    <div className='grid md:grid-cols-3 p-10'>
+                    <div className='grid md:grid-cols-3 p-5 xl:p-10'>
                         <div  className='flex flex-col gap-4'>
                             <img src='./images/form.svg' alt='' />
                         </div>
