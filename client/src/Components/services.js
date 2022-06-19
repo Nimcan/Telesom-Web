@@ -28,7 +28,7 @@ const Content = [
   
 ]
 
-const button = ()=> {
+const Button = ()=> {
   return
 }
 

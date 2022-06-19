@@ -1,6 +1,8 @@
 import React from 'react'
 import {Menu, Transition, Disclosure, Listbox} from '@headlessui/react'
-import { Fragment } from 'react'
+import { Fragment, useEffect, useRef, useState  } from 'react'
+import Portfolio from './Portfolio'
+import { Link } from 'react-router-dom'
 
 
 const dropDown = ()=>{
@@ -49,9 +51,10 @@ function Navbar() {
           </div>
         </Menu>
           <div className='hidden sm:flex flex-row md:flex-wrap'>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Portofolio</a>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Career</a>
-              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Complaints</a>
+            
+              <a href='./Portfolio.js' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to = '/portfolio' >Portofolio</Link></a>
+              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to="/career">Career</Link></a>
+              <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'><Link to = "/support">Complaints</Link></a>
               <a href='#' className='xl:p-5 p-3 hover:bg-brand-green hover:text-white'>Help</a>
           </div>
           <div className='flex flex-row md:flex-wrap gap-2 '>
@@ -92,18 +95,40 @@ function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className='flex flex-col origin-top-left left-0 absolute w-60 mt-1 bg-brand-lightGreen rounded-md z-10'>
-                      <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy ADSL service</a>
-                      <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy MYSMS service</a>
-                      <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Buy Vehicle Tracking service</a>
-                      <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>Landline Installation</a>
-                      <a href='#' className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>New Simcard</a>
+                      <Menu.Item  className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                    {({ active }) => (
+                      <Link to = "/adsl" >
+                      <a href=''>Buy ADSL service</a></Link>)}
+                      </Menu.Item>
+                      <Menu.Item  className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                      {({ active }) => (
+                        <Link to = "/mysms">
+                          <a href=''>Buy MYSMS service</a>
+                        </Link>)}
+                      </Menu.Item>
+                      <Menu.Item  className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                      {({ active }) => (
+                        <Link to = "/ilasoco" >
+                          <a href=''>Buy Vehicle Tracking service</a></Link>)}
+                      </Menu.Item>
+                      <Menu.Item className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                      {({ active }) => (
+                        <Link to = "/landline">
+                          <a href='' >Landline Installation</a></Link>)}
+                      </Menu.Item>
+                      <Menu.Item  className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                      {({ active }) => (
+                        <Link to = "/simcard" >
+                          <a href=''>New Simcard</a>
+                        </Link>)}
+                      </Menu.Item>
                   </Menu.Items>
                 </Transition>
               </Menu>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Services</a>
+              <Link to = "/service"  className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><a href='#'>Services</a></Link>
               <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Company</a>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Contact Us</a>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>About Us</a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><Link to = "/contact" >Contact Us</Link></a>
+              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><Link to = "/about" >About Us</Link></a>
             </div>
           </div>
           <div className='rounded '>
@@ -155,7 +180,7 @@ function Navbar() {
                 </Disclosure.Button>
 
                 <Disclosure.Panel className='flex flex-col bg-brand-green'>
-                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Buy ADSL service</a>
+                    <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'><Link to = "/adsl" >Buy ADSL service</Link></a>
                     <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Buy MYSMS service</a>
                     <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Buy Vehicle Tracking service</a>
                     <a href='#' className='p-3 pl-8 text-white hover:bg-brand-lighGreen'>Landline Installation</a>
