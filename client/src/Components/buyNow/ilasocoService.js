@@ -1,5 +1,13 @@
 import React from 'react'
 
+const sites = ['Arabsiyo', 'Berbera', 'Boorama', 'Burco', 'Buuhoodle', 'Caynabo',
+'Ceel-afwayn', 'Ceerigaabo', 'Dila', 'Gabiley', 'Garadag', 'Hargaisa',
+'Harirad', 'Lawyacado', 'Lughaya', 'Oodwayne', 'Wajaale', 'Widhwidh', 'Xudun']
+
+const services = ['Government institution', 'INGO/UN', 'Business', 'Educational institution', 'Home/Personal user']
+
+const carType = ['Car', 'Van', 'Truck', 'Bike']
+
 function Ilasoco() {
   return (
     <div className='bg-gray-200 pb-10'>
@@ -49,21 +57,10 @@ function Ilasoco() {
                             <div>
                                 <select className='h-10 border mt-1 rounded px-4 w-fit bg-gray-100'>
                                     <option></option>
-                                    <option></option>
+                                    {sites.map((location)=><option>{location}</option>)}
                                 </select>
                             </div>
-                       
                     </div>
-
-                    {/* <div>
-                        <div>
-                            <h1>Contact Person</h1>
-                            <p></p>
-                        </div>
-                            <div>
-                                <input type='' className='h-10 border mt-1 rounded px-4 w-full bg-gray-50'  />
-                            </div>
-                    </div> */}
 
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-4'>
                         <div>
@@ -93,7 +90,8 @@ function Ilasoco() {
                         <div className='flex flex-col'>
                             <label>Type</label>
                             <select className='w-full h-10 mt-2 border rounded px-4 bg-gray-100'>
-                                <option>Truck</option>
+                                <option></option>
+                                {carType.map((type)=><option>{type}</option>)}
                             </select>
                         </div>
                         <div>
@@ -118,18 +116,13 @@ function Ilasoco() {
                         </div>
                     </div>
                 </div>
-                    
 
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-5 gap-4'>
                         <div className='w-full'>
                             <h1 className='font-bold'>2. Customer Category</h1>
                             <select className='w-44 h-10 mt-2 border rounded px-4 w-fit bg-gray-100'>
                                 <option></option>
-                                <option>Government institution</option>
-                                <option>INGO/UN</option>
-                                <option>Business</option>
-                                <option>Educational institution</option>
-                                <option>Home/Personal user</option>
+                                {services.map((type)=><option>{type}</option>)}
                             </select>
                         </div>
                     </div>

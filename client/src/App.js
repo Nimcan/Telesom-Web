@@ -23,7 +23,7 @@ function App() {
     <>
       <Navbar />
       {/* <Crs /> */}
-      <News />
+      {/* <News /> */}
       {/* <Services /> */}
         <Routes>
           <Route path='/about' element={<About />} />

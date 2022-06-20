@@ -1,7 +1,8 @@
 import React from 'react'
 
+const customerSeg = ['Business', 'Education', 'Goverment', 'INGOs', 'Home User', 'Health'] 
+
 function Landline() {
-    const customerSeg = ['Business', 'Education', 'Goverment', 'INGOs', 'Home User', 'Health'] 
   return (
     <div className='bg-gray-200 pb-10'>
         <div>
@@ -69,11 +70,7 @@ function Landline() {
                                 <h1 className='font-bold'>Customer Segmentation</h1>
                                 <select className='w-44 h-10 mt-2 border rounded px-4 w-fit bg-gray-100'>
                                     <option></option>
-                                    <option>Government institution</option>
-                                    <option>INGO/UN</option>
-                                    <option>Business</option>
-                                    <option>Educational institution</option>
-                                    <option>Home/Personal user</option>
+                                    {customerSeg.map((customer) => <option>{customer}</option>)}
                                 </select>
                             </div>
                         </div>

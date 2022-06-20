@@ -5,23 +5,23 @@ function News() {
     <div>
         <div className='contain'>
             <div className='flex flex-col items-center'>
-                <h1>Cinwaanka qoraalka</h1>
-                <div className='flex'>
-                    <div>
-                        <img src='' />
-                        <p>Name of the Author</p>
+                <h1 className='text-3xl font-bold pt-16'>Cinwaanka qoraalka</h1>
+                <div className='flex gap-8 py-5'>
+                    <div className='flex items-center gap-2'>
+                        <img src='./images/Profile.png' className='h-8'/>
+                        <p>Telesom Admin</p>
                     </div>
-                    <div>
-                        <p>Date of the Post</p>
+                    <div className='flex items-center gap-2'>
+                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                        <p>23/09/2022</p>
                     </div>
                 </div>
-                <div>
-                    <img src='./images/news.jpeg' />
-
+                <div className='w-full'>
+                    <img src='./images/news.jpeg' className='w-full' />
                 </div>
-                <div >
+                <div className=''>
                     <h1>Cinwaan Hoosaadka qoraalka</h1>
-                    <p>fasdfjkahs kashfkl ajklsdfjk kljsdfkl askljf hf dfjah alksfjkl askljg asdlk awerajklsdfjkansdjkl ljkasn  asklfbg</p>
+                    <p>fasdfjkahs kashfkl ajklsdfjk kljsdfkl askljf hf dfjah alksfjkl askljg asdlk awerajklsdfjkansdjkl ljkasn  asklfbg asdhfak asdlka klasbdfkl alsbdflk lawsbdfl lasbfkl lkajsbdfkl alsbf  klalsbdfaasdfkb kjasfjkl akljsbf jj asd asdf  sd sf ee d adf</p>
 
                 </div>
                 

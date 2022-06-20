@@ -1,12 +1,52 @@
 import React from 'react'
 
+const sites = ['Arabsiyo', 'Berbera', 'Boorama', 'Burco', 'Buuhoodle', 'Caynabo',
+'Ceel-afwayn', 'Ceerigaabo', 'Dila', 'Gabiley', 'Garadag', 'Hargaisa',
+'Harirad', 'Lawyacado', 'Lughaya', 'Oodwayne', 'Wajaale', 'Widhwidh', 'Xudun']
+
+const services = ['Government institution', 'INGO/UN', 'Business', 'Educational institution', 'Home/Personal user']
+
+const adslTypes = {
+    serviceOne:[
+        1,
+        '256 KBPS',
+        '$20',
+        <input type='checkbox' />
+    ],
+    serviceTwo:[
+        2,
+        '512 KBPS',
+        '$35',
+        <input type='checkbox' />
+    ],
+    serviceThree:[
+        3,
+        '750 KBPS',
+        '$55',
+        <input type='checkbox' />
+    ],
+    serviceFour:[
+        4,
+        '1 MBPS',
+        '$100',
+        <input type='checkbox' />
+    ],
+    serviceFive:[
+        5,
+        '2 MBPS',
+        '$200',
+        <input type='checkbox' />
+    ],
+    serviceSix:[
+        6,
+        '3 MBPS',
+        '$300',
+        <input type='checkbox' />
+    ],
+}
+
+
 function ADSL() {
-
-    const sites = ['Arabsiyo', 'Berbera', 'Boorama', 'Burco', 'Buuhoodle', 'Caynabo',
-                   'Ceel-afwayn', 'Ceerigaabo', 'Dila', 'Gabiley', 'Garadag', 'Hargaisa',
-                   'Harirad', 'Lawyacado', 'Lughaya', 'Oodwayne', 'Wajaale', 'Widhwidh', 'Xudun']
-
-    const services = ['Government institution', 'INGO/UN', 'Business', 'Educational institution', 'Home/Personal user']
   return (
     <div className='bg-gray-200 pb-10'>
         <div>
@@ -40,7 +80,7 @@ function ADSL() {
                                 <div>
                                     <select className='h-10 border mt-1 rounded px-4 w-fit bg-gray-100'>
                                         <option></option>
-                                        <option></option>
+                                        {sites.map((location)=><option>{location}</option>)}
                                     </select>
                                 </div>
                            
@@ -80,11 +120,7 @@ function ADSL() {
                                 <h1 className='font-bold'>2. Customer Category</h1>
                                 <select className='w-44 h-10 mt-2 border rounded px-4 w-fit bg-gray-100'>
                                     <option></option>
-                                    <option>Government institution</option>
-                                    <option>INGO/UN</option>
-                                    <option>Business</option>
-                                    <option>Educational institution</option>
-                                    <option>Home/Personal user</option>
+                                    {services.map((type)=><option>{type}</option>)}
                                 </select>
                             </div>
 
@@ -112,15 +148,6 @@ function ADSL() {
                                         </div> 
                                     </div>
                                 </div>
-                                {/* <table className=''>
-                                    <tr>
-                                        <th colSpan='2'>Installation Prices</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Internet Wireless Installation</td>
-                                        <td>$10</td>
-                                    </tr>
-                                </table> */}
                             
                             </div>
                         </div>
@@ -135,10 +162,22 @@ function ADSL() {
                                     <th>Select</th>
                                 </tr>
                                 <tr className='text-center'>
-                                    <td>1</td>
-                                    <td>256 KBPS</td>
-                                    <td>$20</td>
-                                    <td><input type='checkbox' /></td>
+                                    {adslTypes.serviceOne.map((text)=><td>{text}</td>)}
+                                </tr>
+                                <tr className='text-center'>
+                                    {adslTypes.serviceTwo.map((text)=><td>{text}</td>)}
+                                </tr>
+                                <tr className='text-center'>
+                                    {adslTypes.serviceThree.map((text)=><td>{text}</td>)}
+                                </tr>
+                                <tr className='text-center'>
+                                    {adslTypes.serviceFour.map((text)=> <td>{text}</td>)}
+                                </tr>
+                                <tr className='text-center'>
+                                    {adslTypes.serviceFive.map((text)=><td>{text}</td>)}
+                                </tr>
+                                <tr className='text-center'>
+                                    {adslTypes.serviceSix.map((text)=><td>{text}</td>)}
                                 </tr>
                             </table>
                         </div>
