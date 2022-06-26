@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Crs() {
   return (
@@ -17,8 +18,8 @@ function Crs() {
               {/* <div></div> */}
               <div className='bg-white md:-translate-x-8 p-5'>
                 <h1 className='text-xl font-bold'>Telesom donates six hundred thousand....</h1>
-                <p className=''> qidcad yar oo ka koobanqidcad yar oo ka koobanqidcad yar oo ka kooban qidcad yar oo ka kooban qidcad yar oo ka kooban qidcad yar oo ka kooban </p>
-                <button className='py-2 px-4 border text-white rounded text-brand-green mt-2'>see more....</button>
+                <p className=''> qidcad yar oo ka koobanqidcad yar oo ka koobanqidcad yar oo ka kooban...<span>see more</span> </p>
+                {/* <button className='py-2 px-4 border text-white rounded text-brand-green mt-2'>see more....</button> */}
               </div>
               {/* <div></div> */}
             </div>

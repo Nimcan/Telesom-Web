@@ -16,6 +16,7 @@ import Portfolio from './Components/Portfolio';
 import Services from './Components/services';
 import Support from './Components/support';
 import News from './Components/news';
+import Mobilemoney from './Components/services/mobileMoney';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
     <>
       <Navbar />
       {/* <Crs /> */}
-      {/* <News /> */}
+      <Mobilemoney />
+      <News />
       {/* <Services /> */}
         <Routes>
           <Route path='/about' element={<About />} />
