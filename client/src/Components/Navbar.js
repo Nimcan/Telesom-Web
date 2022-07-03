@@ -126,7 +126,31 @@ function Navbar() {
                 </Transition>
               </Menu>
               <Link to = "/service"  className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><a href='#'>Services</a></Link>
-              <a href='#' className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>Company</a>
+
+
+              <Menu as="div" className='relative inline-block'>
+                <Menu.Button className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'>
+                  <a href='#' >Company</a>
+                </Menu.Button>
+                <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className='flex flex-col origin-top-left left-0 absolute w-36 mt-1 bg-brand-lightGreen rounded-md z-10'>
+                      <Menu.Item className='p-2 pl-5 hover:bg-brand-green  hover:text-white'>
+                        {({ active }) => ( <Link to= "/crs">FAQ</Link> )}
+                      </Menu.Item>
+                      
+                    </Menu.Items>
+                  </Transition>
+              </Menu>
+
+
               <Link to = "/contact" className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black' ><a href='#' >Contact Us</a></Link>
               <Link to = "/about" className='xl:p-5 p-2 text-white hover:bg-brand-lightGreen hover:text-black'><a href='#' >About Us</a></Link>
             </div>

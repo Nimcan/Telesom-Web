@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Blog() {
+function Promotion() {
   return (
     <div>
-      
+        
     </div>
   )
 }
 
-export default Blog
+export default Promotion
