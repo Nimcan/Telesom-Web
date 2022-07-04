@@ -25,7 +25,7 @@ function App() {
     <>
       <Navbar />
       {/* <Crs /> */}
-      <Login />
+      {/* <Login /> */}
       {/* <Mobilemoney /> */}
       {/* <News /> */}
       {/* <Services /> */}

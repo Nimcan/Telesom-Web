@@ -8,7 +8,8 @@ module.exports = {
             lightGreen:"#97D700",
             yellow:"#ffff00",
             lighterGreen:"#9fd3a5",
-            lightBlue:"#888ce9"
+            lightBlue:"#888ce9",
+            white: "#ffffff"
         }
       },
       background:{

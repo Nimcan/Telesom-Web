@@ -3,6 +3,7 @@ import {Menu, Transition, Disclosure, Listbox} from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState  } from 'react'
 import Portfolio from './Portfolio'
 import { Link } from 'react-router-dom'
+import Login from './login'
 
 
 const dropDown = ()=>{
@@ -19,6 +20,8 @@ const dropDown = ()=>{
 
 
 function Navbar() {
+
+  const [loginModel, setLoginModel] = useState(false)
   return (
     // <Menu>
       <div className='flex flex-col'>
@@ -28,7 +31,7 @@ function Navbar() {
 
           <div className='bg-brand-green cursor-pointer '>
             <Menu.Button>
-              <p className='text-white flex p-5 items-center '>Personal
+              <p className='text-white p-5 items-center '>Personal
               <i className="fa-solid fa-caret-down ml-2"></i>
               </p>
             </Menu.Button>
@@ -43,9 +46,10 @@ function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     
-                <Menu.Item className='absolute flex flex-col bg-brand-lightGreen p-5'>
+                <Menu.Item className='absolute flex  flex-col bg-brand-lightGreen p-5'>
                   {/* <input placeholder='Search Here....' className='p-2' /> */}
                   <p className='bg-brand-lightGreen py-5 px-10'>Business</p>
+
                 </Menu.Item>
               </Transition>
           </div>
@@ -63,10 +67,12 @@ function Navbar() {
               <p>English</p>
               
             </div>
-            <div className='flex items-center xl:p-5 p-3 hover:bg-brand-green hover:text-white cursor-pointer'>
+            <div className='flex items-center xl:p-5 p-3 hover:bg-brand-green hover:text-white cursor-pointer' onClick={()=> {setLoginModel(true)}}>
+              
               <i class="fa-solid fa-user mr-1"></i>
-              <p>Login</p>
+              <p >Login</p>
             </div>
+            {loginModel && <Login closeLoginModel={setLoginModel}/>}
           </div>
         </div>
 
