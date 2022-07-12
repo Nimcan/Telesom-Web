@@ -18,6 +18,7 @@ import Support from './Components/support';
 import News from './Components/news';
 import Mobilemoney from './Components/services/mobileMoney';
 import Login from './Components/login';
+import Promotion from './Components/Company/promotions';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Navbar />
       {/* <Crs /> */}
       {/* <Login /> */}
+      <Promotion />
       {/* <Mobilemoney /> */}
       {/* <News /> */}
       {/* <Services /> */}
